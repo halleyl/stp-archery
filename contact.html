@@ -10,7 +10,7 @@
     <header>
       <img class="logo" src="images/logo.jpg" alt="logo" width="120" height="100">
       <h1>Straight to the Point Archery</h1>
-      <img class="logo" src="images/students-competing.jpg" alt="logo" width="500" height="325">
+      <img class="banner" src="images/students-competing.jpg" alt="banner" width="500" height="325">
       <nav class="main-nav">
         <a class="nav" href="index.html">Home</a>     
         <a class="nav" href="services.html">Services</a>
@@ -22,55 +22,54 @@
     </header> 
 
 
-     <h2>Location of School</h2>
-  
+    <h2>Location of School</h2>
 
- <div class="row">
-    <div class="column">
-      <div id="map" style="width:100%;height:500px"></div>
-    </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="Reason">Reason</label>
-        <select id="Reason" name="Reason">
-          <option value="new member info">New member info</option>
-          <option value="classes">Classes</option>
-          <option value="General Info">General Info</option>
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-   
+    <div class="row">
+      <div class="column">
+        <div id="map" style="width:100%;height:500px"></div>
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="Reason">Reason</label>
+          <select id="Reason" name="Reason">
+            <option value="new member info">New member info</option>
+            <option value="classes">Classes</option>
+            <option value="General Info">General Info</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
     <script>
     function myMap() {
-        var mapOptions = {
-            center: new google.maps.LatLng(47.60, -122.33),
-            zoom: 10,
-            mapTypeId: google.maps.MapTypeId.HYBRID
-        }
+      var mapOptions = {
+          center: new google.maps.LatLng(47.60, -122.33),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+      }
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     }
     </script>
-  
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyM1gHQWCnhP5PjbA1zQCV9feH4t1bqyI&callback=myMap"></script>
 
-  </div>
-   
-  <div class="chat-box">
-    <div class="open">Open
-    <div class="box">
-      <br>
-      Test
-      <br>
     </div>
-     </div>
-     </div>
+
+    <div class="chat-box">
+      <div class="open">Open
+        <div class="box">
+          <br>
+          Test
+          <br>
+        </div>
+      </div>
+    </div>
 
 
     <footer>
