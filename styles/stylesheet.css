@@ -4,7 +4,7 @@ Medium green: #94c840
 Brown: #523e33
 */
 
-/* Basic styling of the body */
+/* Basic styling of the body - Could put font families here, too */
 
 body {
   background-color: #ffffff;
@@ -15,6 +15,8 @@ body {
 header {
   background-color: white;
 }
+
+/* Logo and H1 styles */
 
 .logo {
   width: 7rem;
@@ -32,15 +34,17 @@ h1 {
 
 /* Setting up OL items as a nav bar across the width of the screen */
 
+/* Remove bullets, set nav width to 100% of header */
+
 .main-nav {
-  /* Remove bullets, set nav width to 100% of header */
   background-color: #d6e8b8;
   list-style: none;
   width: 100%;
 }
 
+/* float the elements, center link content, width on links, set font color */
+
 .main-nav a {
-  /* add border between elements, float the elements, center link content, width on links, set font color */
   background-color: #d6e8b8;
   float: left;
   width: 13.2%;
@@ -51,6 +55,8 @@ h1 {
   font-weight: bold;
   
 }
+
+/* Set extra padding on first and last nav links so they're closer to center */
 
 .main-nav a:first-of-type {
   width: 23.5%;
@@ -63,7 +69,6 @@ h1 {
   padding-left: 1%;
   padding-right: 15.5%;
 }
-
 
 /*  Nav changes to 3 per line after 600px */
 
@@ -84,12 +89,13 @@ h1 {
 
 }
 
+/* Clear the nav float */
 
 nav::after {
   clear:both;
 }
 
-/* Set side margins of main article */
+/* Set side margins of main article (so text isn't too spread out and hard to read) */
 article {
   margin: 0 auto;
   width: 78%;
@@ -168,6 +174,8 @@ article img {
   margin: auto;
 } 
 
+/* Don't let the images get too huge after the breakpoint */
+
 @media only screen and (max-width: 700px) {
 
   article img {
@@ -191,11 +199,14 @@ section[class^='span_'] p:last-of-type {
 }
 
 /* Style the footer and clear all floats */
+
 footer {
   clear:both;
   width: 100%;
   background-color: #d6e8b8;
 }
+
+/* Reduce font size of the items in the footer, add some padding */
 
 footer h3 {
   font-size: 1rem;
@@ -232,12 +243,8 @@ footer h4 {
   padding: .75rem;
 }
 
-nav::after {
-  clear:both;
-}
 
-
-/* I think this was all of Lefty's work for the contact page */
+/* I think this was all of Lefty's work for the contact page! */
 
 * {
     box-sizing: border-box;
