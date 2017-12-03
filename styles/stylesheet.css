@@ -1,4 +1,4 @@
-/* Body styles */
+/*Body styles*/
 body{
   margin: 0 auto;
   padding: 0;
@@ -17,20 +17,7 @@ body{
   clear: both;
 }
 
-/*
- clearfix styles to keep the row divs from collapsing,
-since all their children are floated 
-div.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
-
-header{
-  widows: 800px;
-}
-
+/*Logo and header 1 styles*/
 img.logo{
   float: left;
   height:6em;
@@ -47,20 +34,22 @@ h1{
   text-align: center;
 } 
 
+/*Banner styles*/
 article.banner{
   float: left;
 }
 
+/*Create a reserved space for the banner*/
 .banner{
-  height: 150px;
+  height: 25vh;
   width: 100vmax;
   margin-left: 1em;
   margin-bottom: 1em;
   padding: 0.25em;
-  /*Ideally, it would be nice to take out the overflow function, and instead crop the photos to the exact section we want to see, and then put the correct sizing*/
   overflow: hidden;
 }
 
+/*Float and add padding to all images of the banner*/
 .firstchild, .secondchild, .thirdchild, .fourthchild, .lastchild {
   float: left;
   height: 200px;
@@ -71,20 +60,36 @@ img{
   padding: 1em;
 }
 
+/*Bannermove transition*/
 .firstchild{
-  -webkit-animation: bannermove 30s linear infinite;
+  /*Animation name, speed, animation type, delay, total time*/
+  -webkit-animation: banneranimation 30s linear 1s infinite;
 }
 
-@-webkit-keyframes "bannermove" {
+/*Define the speed and where it stops*/
+@-webkit-keyframes "banneranimation" {
+  
+  /*Initially: margin left unmoving*/
   0%{
     margin-left: 0px;
   }
+  
+  /*Now: margin left moving*/
   100%{
-    margin-left: -1500px;
+    margin-left: -1000px;
   }
 }
 
 
+/*
+ clearfix styles to keep the row divs from collapsing,
+since all their children are floated 
+div.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
 /* this selector selects all divs that have a class name
 beginning with 'col_' 
 ^= means It is the regular expression syntax, another way of saying "starts with this string"       */
