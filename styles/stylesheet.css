@@ -107,6 +107,8 @@ article {
   
 }
 
+/* Style links in main area text */
+
 article a {
   color: #1a5d00;
   text-decoration: underline;
@@ -235,6 +237,18 @@ footer {
   background-color: #d6e8b8;
 }
 
+
+/* Style links in footer */
+
+footer a {
+  color: #1a5d00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* Reduce font size of the items in the footer, add some padding */
 
 footer h3 {
@@ -250,7 +264,7 @@ footer h4 {
 }
 
 .nd-footer {
-  padding: .5rem 20.5%;
+  padding: 1rem 20.5% .25rem 20.5%;
   text-align: center;
 }
 
