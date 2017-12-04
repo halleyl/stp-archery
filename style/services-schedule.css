@@ -20,6 +20,13 @@ p {
   font-weight: 700;
 }
 
+p.price:hover {
+  background-color: #d6e8b8;
+}
+p.prerequisite:hover {
+  text-decoration: underline;
+}
+
   div[class^='classes']  {
     float: left;
     border: 1px solid white;
@@ -36,8 +43,10 @@ p {
   padding:5px;
   margin:5px;
 }
+
 /*Media Queries*/
 @media only screen and (max-width:450px) {
-   .classes {
-    width: 100%;
-    }}
+   .classes {width: 100%;}
+    }
+
+
