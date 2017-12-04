@@ -1,0 +1,43 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  color: #94c840;
+  text-align: center;
+}
+
+h2 {
+  color:#523e33;
+  padding: 20px;
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
+.price {
+  font-weight: 700;
+}
+
+  div[class^='classes']  {
+    float: left;
+    border: 1px solid white;
+    }
+
+  div.classes {
+    width: 33.333%;
+    margin: auto;
+    padding: 0 15px 25px;
+    }
+
+.headers {
+  clear:both;
+  padding:5px;
+  margin:5px;
+}
+/*Media Queries*/
+@media only screen and (max-width:450px) {
+   .classes {
+    width: 100%;
+    }}
