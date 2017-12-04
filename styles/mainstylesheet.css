@@ -218,6 +218,8 @@ article img {
 article p {
   line-height: 1.2;
   margin-bottom: 1em;
+  text-align: justify;
+  
 }
 
 /* Don't including spacing after last paragraph in a section */
