@@ -2,40 +2,42 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  line-height: 25px;
 }
+  
+/*CSS for Schedule.HTML*/
+
 h3 {
   color: #94c840;
   text-align: center;
+  line-height: 40px;
 }
 
 h2 {
   color:#523e33;
   padding: 20px;
   text-align: center;
+
 }
 p {
   text-align: justify;
+  font-size: 18px;
+  line-height: 20px;
 }
+
 .price {
-  font-weight: 700;
+    line-height: 28px;
+    font-size: 18px;
 }
-
-p.price:hover {
-  background-color: #d6e8b8;
-}
-p.prerequisite:hover {
-  text-decoration: underline;
-}
-
   div[class^='classes']  {
     float: left;
     border: 1px solid white;
     }
 
   div.classes {
-    width: 33.333%;
+    width: 33.3333%;
     margin: auto;
-    padding: 0 15px 25px;
+    padding: 0 35px 25px;
     }
 
 .headers {
@@ -44,9 +46,25 @@ p.prerequisite:hover {
   margin:5px;
 }
 
-/*Media Queries*/
+/*CSS for Schedule.HTML*/
+
+div.weekday {
+  width: 33.33%;
+  border: solid;
+}
+
+div.weekday-text {
+  width: 75%;
+  float: right;
+  border: solid;
+}
+
+/*Media Queries for Services.HTML*/
 @media only screen and (max-width:450px) {
    .classes {width: 100%;}
     }
+@media 
+  
+/*Media Queries for Schedule.HTML */
 
 
