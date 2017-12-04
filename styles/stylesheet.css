@@ -80,28 +80,10 @@ img{
   }
 }
 
-
-/*
- clearfix styles to keep the row divs from collapsing,
-since all their children are floated 
-div.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/*Main nav styles*/
+nav.main-nav{
+  float: right;
+  display: flex;
+  justify-content:space-around;
+  padding: 2em 4em 2em 2em;
 }
-*/
-/* this selector selects all divs that have a class name
-beginning with 'col_' 
-^= means It is the regular expression syntax, another way of saying "starts with this string"       */
-
-/*
-div[class^='col_']  {
-  float: left;
-  background-color: #99FFCC;
-  border: 1px solid white;
-}
-
-div.col_1_of_5 {width: 20%;}
-div.col_2_of_5 {width: 20%;}
-div.col_3_of_5 {width: 20%;}
-*/
