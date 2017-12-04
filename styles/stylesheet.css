@@ -1,47 +1,8 @@
-/*Body styles*/
-body{
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Arial", Arial, sans-serif;
-}
-
-/*General styles*/
-.clearfix:after{
-  content:"";
-  display: block;
-  clear: both;
-}
-
-.clear{
-  clear: both;
-}
-
-/*Logo and header 1 styles*/
-img.logo{
-  float: left;
-  height:6em;
-  width:6em;
-  margin: -0.5em 0.5em 0.5em 0.5em;
-  padding: 0.5em;
-  display: block;
-}
-
-h1{
-  margin: 0.5em;
-  padding: 0.5em;
-  font-size: 36px;
-  text-align: center;
-} 
-
-/*Banner styles*/
-article.banner{
-  float: left;
-}
+/* Banner Styles */
 
 /*Create a reserved space for the banner*/
 .banner{
-  height: 25vh;
+  height: auto;
   width: 100vmax;
   margin-left: 1em;
   margin-bottom: 1em;
@@ -49,41 +10,29 @@ article.banner{
   overflow: hidden;
 }
 
-/*Float and add padding to all images of the banner*/
-.firstchild, .secondchild, .thirdchild, .fourthchild, .lastchild {
+/*Float and add padding to all images in banner*/
+.firstchild, .secondchild, .thirdchild, .fourthchild {
   float: left;
   height: 200px;
   width: auto;
+  padding: 0.2rem;
 }
 
-img{
-  padding: 1em;
-}
-
-/*Bannermove transition*/
+/*Banner transition: Animation name, speed, animation type, delay, total time*/
 .firstchild{
-  /*Animation name, speed, animation type, delay, total time*/
   -webkit-animation: banneranimation 30s linear 1s infinite;
 }
 
 /*Define the speed and where it stops*/
+/*Initially: margin left unmoving*/
+/*Now: margin left moving*/
 @-webkit-keyframes "banneranimation" {
   
-  /*Initially: margin left unmoving*/
   0%{
     margin-left: 0px;
   }
   
-  /*Now: margin left moving*/
   100%{
     margin-left: -1000px;
   }
-}
-
-/*Main nav styles*/
-nav.main-nav{
-  float: right;
-  display: flex;
-  justify-content:space-around;
-  padding: 2em 4em 2em 2em;
 }
