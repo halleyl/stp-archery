@@ -3,7 +3,7 @@
 /*Create a reserved space for the banner*/
 .banner{
   height: auto;
-  width: 100vmax;
+  width: 98vmax;
   margin-left: 1em;
   margin-bottom: 1em;
   padding: 0.25em;
