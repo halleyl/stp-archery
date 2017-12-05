@@ -118,6 +118,8 @@ article a:hover {
   background-color: #d6e8b8;
 }
 
+/* ======= START ABOUT & INSTRUCTORS PAGE STYLES ====== */
+
 /* Float all of the grid divs */
 
 section[class^='span_']  {
@@ -162,7 +164,7 @@ section[class^='span_']:first-child {
 
 @media only screen and (max-width: 700px) {
   
-    article {
+    .abt-inst {
     margin: 0 auto;
     width: 96%;
     padding: 0 2%;
@@ -189,7 +191,7 @@ section[class^='span_']:first-child {
 
 /* Make the images in the grid fit their containers */
 
-article img {
+.abt-inst img {
   width: 100%;
   display: block;
   margin: auto;
@@ -199,7 +201,7 @@ article img {
 
 @media only screen and (max-width: 700px) {
 
-  article img {
+  .abt-inst img {
     width: 75%;
     display: block;
     margin: auto;
@@ -208,14 +210,14 @@ article img {
 
 /* Set spacing between paragraphs */
 
-article p {
+.abt-inst p {
   line-height: 1.2;
   margin-bottom: 1em;
 }
 
 /* Don't including spacing after last paragraph in a section */
 
-section[class^='span_'] p:last-of-type {
+.abt-inst section[class^='span_'] p:last-of-type {
   margin-bottom: 0;
 
 }
@@ -228,6 +230,9 @@ section[class^='span_'] p:last-of-type {
     flex-direction: column-reverse;
   }
 }
+
+/* ======= END ABOUT & INSTRUCTORS PAGE STYLES ====== */
+
 
 /* Style the footer and clear all floats */
 
