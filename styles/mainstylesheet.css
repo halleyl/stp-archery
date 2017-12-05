@@ -7,7 +7,7 @@ Brown: #523e33
 /* Basic styling of the body - Could put font families here, too */
 
 body {
-  background-color: #ffffff;
+  background-color: #f4f9eb;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
 }
@@ -112,6 +112,8 @@ article {
   margin: 0 auto;
   width: 78%;
   padding: 0 2%;
+  background-color: #f4f9eb;
+  
 }
 
 /* Style links in main area text */
@@ -213,12 +215,13 @@ article img {
   } 
 }
 
-/* Set spacing between paragraphs */
+/* Set spacing between paragraphs and background color */
 
 article p {
   line-height: 1.2;
   margin-bottom: 1em;
   text-align: justify;
+  background-color: #f4f9eb;
   
 }
 
