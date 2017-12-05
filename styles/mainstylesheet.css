@@ -61,11 +61,11 @@ h2{
   margin: 3rem 0rem 0rem 0rem;
 }
 
-/* float the elements, center link content, width on links, set font color */
+/* Float the elements, center link content, width on links, set font color */
 
 .main-nav a {
   float: left;
-  width: 13.2%;
+  width: 8.33; /* 50% divided by 6 elements: each element takes 8.33% of the space */
   padding: 1rem 1%;
   color: black;
   text-decoration: none;
@@ -76,18 +76,19 @@ h2{
 /* Set extra padding on first and last nav links so they're closer to center */
 
 .main-nav a:first-of-type {
-  width: 10%;
+/*  width: 8.33%;*/
   padding-right: 1%;
-  padding-left: 10%;
+  padding-left: 18%;
 }
 
 .main-nav a:last-of-type {
-  width: 10%;
+/*  width: 8.33%;*/
   padding-left: 1%;
-  padding-right: 1%;
+  padding-right: 10%;
 }
 
 /*  Nav changes to 3 per line after 700px */
+/*
 
 @media only screen and (max-width: 700px) {
 	.main-nav a {
@@ -104,6 +105,7 @@ h2{
       padding: 1rem;
     }
 }
+*/
 
 /* Clear the nav float */
 
