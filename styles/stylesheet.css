@@ -4,36 +4,72 @@ Medium green: #94c840
 Brown: #523e33
 */
 
+/* Colors for all the pages:
+Header & Footer background: #eaf3d8
+Main article background: #f5f9eb
+*/
+
 /* Basic styling of the body - Could put font families here, too */
 
 body {
-  background-color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
+  background-color: #f5f9eb; /* This style is overwritten by the header and footer color. This is necessary for my page, because my article tag is not being read. You guys can just put the background color as your article background, and it should work */
 }
 
-/* Header styling - Logo centered, company name below that, and nav below that */
-
-header {
-  background-color: white;
+.clearfix:after{
+  content:"";
+  display: block;
+  clear: both;
 }
 
-/* Logo and H1 styles */
+.clear{
+  clear: both;
+}
+/* Header styling - Logo and h1 floated left, nav floated right, all on the same line */
+
+header{
+  background-color: #eaf3d8;
+}
 
 .logo {
+  float: left;
   width: 7rem;
   height: 7rem;
   max-width: 50%;
   max-height: 50%;
   display: block;
-  margin: 1rem auto 0;
+  margin: 0.5rem 1rem 1rem 4rem;
 }
 
 h1 {
+  float: left;
   text-align: center;
-  margin: .5rem auto;
-  font-weight: 300;
+  padding: 0.5rem 1%;
+  margin: 3rem 0rem 1rem 0rem;
+  font-weight: 400;
   font-size: 1.8rem;
+}
+
+/* After 584px, logo and h1 have reduced padding, margins, and h1 goes to the next line */
+@media only screen and (max-width: 584px) {
+  .logo{
+    margin: 0 auto;
+    padding: 2%;
+  }
+  
+  h1 {
+    clear: both;
+    float: left;
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
+
+/* h2 styles */
+
+h2{
+  background-color: #f5f9eb;
 }
 
 /* Setting up OL items as a nav bar across the width of the screen */
@@ -41,40 +77,49 @@ h1 {
 /* Remove bullets, set nav width to 100% of header */
 
 .main-nav {
-  background-color: #d6e8b8;
+  float: right;
   list-style: none;
-  width: 100%;
+  width: 50%;
+  margin: 3.5rem 0rem 0rem 0rem;
 }
 
-/* float the elements, center link content, width on links, set font color */
+/* Float the elements, center link content, width on links, set font color */
 
 .main-nav a {
-  background-color: #d6e8b8;
   float: left;
-  width: 13.2%;
-  padding: 1rem 1%;
+  width: 13.2%; 
+  padding: 0.5rem 1%;
   color: black;
   text-decoration: none;
   text-align: center;
-  font-weight: bold;
+  font-weight: bold; 
+}
+
+/*  After 1194px, nav takes 100% width. As the screen shrinks, the nav elements go to the next line */
+
+@media only screen and (max-width: 1194px) {
+  .main-nav{
+    width: 100%;
+    margin: 0rem;
+  }
   
+  .main-nav a {
+    width: 16.67%; 
+    padding: 1rem;
+  }
+  
+  .main-nav a:first-of-type {
+    width: 16.67%; 
+    padding: 1rem;
+  }
+
+  .main-nav a:last-of-type {
+    width: 16.67%; 
+    padding: 1rem;
+  }
 }
 
-/* Set extra padding on first and last nav links so they're closer to center */
-
-.main-nav a:first-of-type {
-  width: 23.5%;
-  padding-right: 1%;
-  padding-left: 15.5%;
-}
-
-.main-nav a:last-of-type {
-  width: 23.5%;
-  padding-left: 1%;
-  padding-right: 15.5%;
-}
-
-/*  Nav changes to 3 per line after 700px */
+/*  After 1194px, nav takes 100% width, but as the screen shrinks, the nav elements go to the next line */
 
 @media only screen and (max-width: 700px) {
 	.main-nav a {
@@ -90,7 +135,6 @@ h1 {
       width: 33.333%; 
       padding: 1rem;
     }
-
 }
 
 /* Clear the nav float */
@@ -104,7 +148,6 @@ article {
   margin: 0 auto;
   width: 78%;
   padding: 0 2%;
-  
 }
 
 /* Style links in main area text */
@@ -118,13 +161,11 @@ article a:hover {
   background-color: #d6e8b8;
 }
 
-/* ======= START ABOUT & INSTRUCTORS PAGE STYLES ====== */
-
 /* Float all of the grid divs */
 
 section[class^='span_']  {
       float: left;
-      background-color: #ffffff;
+      background-color: #f5f9eb;
       margin: 1%;
     }
 
@@ -164,7 +205,7 @@ section[class^='span_']:first-child {
 
 @media only screen and (max-width: 700px) {
   
-    .abt-inst {
+    article {
     margin: 0 auto;
     width: 96%;
     padding: 0 2%;
@@ -191,7 +232,7 @@ section[class^='span_']:first-child {
 
 /* Make the images in the grid fit their containers */
 
-.abt-inst img {
+article img {
   width: 100%;
   display: block;
   margin: auto;
@@ -201,25 +242,26 @@ section[class^='span_']:first-child {
 
 @media only screen and (max-width: 700px) {
 
-  .abt-inst img {
+  article img {
     width: 75%;
     display: block;
     margin: auto;
   } 
 }
 
-/* Set spacing between paragraphs */
+/* Set spacing between paragraphs and background color */
 
-.abt-inst p {
+article p {
   line-height: 1.2;
   margin-bottom: 1em;
+  text-align: justify;
+  background-color: #f5f9eb;
 }
 
 /* Don't including spacing after last paragraph in a section */
 
-.abt-inst section[class^='span_'] p:last-of-type {
+section[class^='span_'] p:last-of-type {
   margin-bottom: 0;
-
 }
 
 /* Allow contained elements (in container with class "flex-reverse") to reverse position after breakpoint */
@@ -231,15 +273,12 @@ section[class^='span_']:first-child {
   }
 }
 
-/* ======= END ABOUT & INSTRUCTORS PAGE STYLES ====== */
-
-
 /* Style the footer and clear all floats */
 
 footer {
   clear:both;
   width: 100%;
-  background-color: #d6e8b8;
+  background-color: #eaf3d8;
 }
 
 /* Style links in footer */
