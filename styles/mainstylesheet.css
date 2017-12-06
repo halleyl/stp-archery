@@ -9,7 +9,7 @@ Header & Footer background: #eaf3d8
 Main article background: #f5f9eb
 */
 
-/* Basic styling of the body - Could put font families here, too */
+/* Basic styling of the body */
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
@@ -52,6 +52,7 @@ h1 {
 }
 
 /* After 584px, logo and h1 have reduced padding, margins, and h1 goes to the next line */
+
 @media only screen and (max-width: 584px) {
   .logo{
     margin: 0 auto;
@@ -89,18 +90,10 @@ h1 {
   font-weight: bold; 
 }
 
-/* Set extra padding on first and last nav links so they're closer to center */
+/* Set extra padding on first nav link */
 
 .main-nav a:first-of-type {
-/*  width: 13.2%;*/
-/* padding-right: 1%;*/
   padding-left: 6%;
-}
-
-.main-nav a:last-of-type {
-/*  width: 13.2%;*/
-/*  padding-left: 1%;*/
-/*  padding-right: 15.5%;*/
 }
 
 /*  After 1194px, nav takes 100% width. As the screen shrinks, the nav elements go to the next line */
@@ -127,7 +120,7 @@ h1 {
   }
 }
 
-/*  After 1194px, nav takes 100% width, but as the screen shrinks, the nav elements go to the next line */
+/*  After 700px, nav seperates in two colomns of three lines */
 
 @media only screen and (max-width: 700px) {
 	.main-nav a {
@@ -152,6 +145,7 @@ nav::after {
 }
 
 /* Set side margins of main article (so text isn't too spread out and hard to read) */
+
 article {
   margin: 0 auto;
   width: 78%;
