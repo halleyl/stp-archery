@@ -12,13 +12,13 @@
   line-height: 40px;
 }
 
-h2 {
+.maggie-h2 {
   color:#523e33;
   padding: 20px;
   text-align: center;
 
 }
-p {
+.maggie-p {
   text-align: justify;
   font-size: 18px;
   line-height: 20px;
