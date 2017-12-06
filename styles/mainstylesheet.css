@@ -5,8 +5,8 @@ Brown: #523e33
 */
 
 /* Colors for all the pages:
-Header & Footer background: #deedc4
-Main article background: #e9f3d8
+Header & Footer background: #eaf3d8
+Main article background: #f5f9eb
 */
 
 /* Basic styling of the body - Could put font families here, too */
@@ -14,7 +14,7 @@ Main article background: #e9f3d8
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
-  background-color: #e9f3d8; /* This style is overwritten by the header and footer color. This is necessary for my page, because my article tag is not being read. You guys can just put the background color as your article background, and it should work */
+  background-color: #f5f9eb; /* This style is overwritten by the header and footer color. This is necessary for my page, because my article tag is not being read. You guys can just put the background color as your article background, and it should work */
 }
 
 .clearfix:after{
@@ -29,7 +29,7 @@ body {
 /* Header styling - Logo and h1 floated left, nav floated right, all on the same line */
 
 header{
-  background-color: #deedc4;
+  background-color: #eaf3d8;
 }
 
 .logo {
@@ -69,7 +69,7 @@ h1 {
 /* h2 styles */
 
 h2{
-  background-color: #e9f3d8;
+  background-color: #f5f9eb;
 }
 
 /* Setting up OL items as a nav bar across the width of the screen */
@@ -269,7 +269,7 @@ article p {
   line-height: 1.2;
   margin-bottom: 1em;
   text-align: justify;
-  background-color: #e9f3d8;
+  background-color: #f5f9eb;
 }
 
 /* Don't including spacing after last paragraph in a section */
@@ -292,7 +292,7 @@ section[class^='span_'] p:last-of-type {
 footer {
   clear:both;
   width: 100%;
-  background-color: #deedc4;
+  background-color: #eaf3d8;
 }
 
 /* Style links in footer */
