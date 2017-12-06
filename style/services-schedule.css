@@ -5,10 +5,9 @@
   line-height: 25px;
 }
   
-/*CSS for Schedule.HTML*/
+/*CSS for Services.HTML*/
 
-h3 {
-  color: #94c840;
+.maggie-h3 {
   text-align: center;
   line-height: 40px;
 }
@@ -48,23 +47,25 @@ p {
 
 /*CSS for Schedule.HTML*/
 
-div.weekday {
-  width: 33.33%;
-  border: solid;
+.schedule-container {
+	display:grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	padding: 30px 40px;
+}
+.schedule-p {
+	text-align: center;
+	line-height: 30px;
 }
 
-div.weekday-text {
-  width: 75%;
-  float: right;
-  border: solid;
+/*Media Queries for Services.HTML*/ 
+
+@media only screen and (max-width: 700px) { 
+	.classes {width: 100%;}
+	.classes { margin: 1% 0 1% 0%;}
+	
 }
 
-/*Media Queries for Services.HTML*/
-@media only screen and (max-width:450px) {
-   .classes {width: 100%;}
-    }
-@media 
-  
+
 /*Media Queries for Schedule.HTML */
 
 
