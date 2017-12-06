@@ -1,0 +1,54 @@
+/* Banner Styles */
+
+/*Create a reserved space for the banner*/
+.banner{
+  height: auto;
+  width: 98vmax;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  overflow: hidden;
+}
+
+/*Float and add padding to all images in banner*/
+.firstchild, .secondchild, .thirdchild, .fourthchild {
+  float: left;
+  height: 200px;
+  width: auto;
+  padding: 0.2rem;
+}
+
+/*Banner transition: Animation name, speed, animation type, delay, total time*/
+.firstchild{
+  -webkit-animation: banneranimation 10s linear 1s infinite;
+}
+
+/*Define the speed and where it stops*/
+@-webkit-keyframes "banneranimation" {
+  /*Initially: margin left unmoving*/
+  0%{
+    margin-left: 0px;
+  }
+ /*Now: margin left moving*/ 
+  100%{
+    margin-left: -300px;
+  }
+}
+
+/*  After 1194px, nav takes 100% width. As the screen shrinks, the nav elements go to the next line */
+
+/*
+@media only screen and (max-width: 1260px) {
+  .banner{
+    width: 100%;
+  }
+
+  .banner:first-of-type {
+     
+  }
+
+  .banner:last-of-type {
+    
+  }
+}
+*/
