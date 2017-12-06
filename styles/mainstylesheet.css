@@ -4,12 +4,17 @@ Medium green: #94c840
 Brown: #523e33
 */
 
+/* Colors for all the pages:
+Header & Footer background: #deedc4
+Main article background: #e9f3d8
+*/
+
 /* Basic styling of the body - Could put font families here, too */
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
-  background-color: #e9f3d8;
+  background-color: #e9f3d8; /* This style is overwritten by the header and footer color. This is necessary for my page, because my article tag is not being read. You guys can just put the background color as your article background, and it should work */
 }
 
 .clearfix:after{
@@ -46,6 +51,23 @@ h1 {
   font-size: 1.8rem;
 }
 
+/* After 584px, logo and h1 have reduced padding, margins, and h1 goes to the next line */
+@media only screen and (max-width: 584px) {
+  .logo{
+    margin: 0 auto;
+    padding: 2%;
+  }
+  
+  h1 {
+    clear: both;
+    float: left;
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
+
+/* h2 styles */
+
 h2{
   background-color: #e9f3d8;
 }
@@ -58,15 +80,15 @@ h2{
   float: right;
   list-style: none;
   width: 50%;
-  margin: 3rem 0rem 0rem 0rem;
+  margin: 3.5rem 0rem 0rem 0rem;
 }
 
 /* Float the elements, center link content, width on links, set font color */
 
 .main-nav a {
   float: left;
-  width: 8.33; /* 50% divided by 6 elements: each element takes 8.33% of the space */
-  padding: 1rem 1%;
+  width: 13.2%; 
+  padding: 0.5rem 1%;
   color: black;
   text-decoration: none;
   text-align: center;
@@ -76,19 +98,42 @@ h2{
 /* Set extra padding on first and last nav links so they're closer to center */
 
 .main-nav a:first-of-type {
-/*  width: 8.33%;*/
-  padding-right: 1%;
-  padding-left: 18%;
+/*  width: 13.2%;*/
+/* padding-right: 1%;*/
+  padding-left: 6%;
 }
 
 .main-nav a:last-of-type {
-/*  width: 8.33%;*/
-  padding-left: 1%;
-  padding-right: 10%;
+/*  width: 13.2%;*/
+/*  padding-left: 1%;*/
+/*  padding-right: 15.5%;*/
 }
 
-/*  Nav changes to 3 per line after 700px */
-/*
+/*  After 1194px, nav takes 100% width. As the screen shrinks, the nav elements go to the next line */
+
+@media only screen and (max-width: 1194px) {
+  .main-nav{
+    width: 100%;
+    margin: 0rem;
+  }
+  
+  .main-nav a {
+    width: 16.67%; 
+    padding: 1rem;
+  }
+  
+  .main-nav a:first-of-type {
+    width: 16.67%; 
+    padding: 1rem;
+  }
+
+  .main-nav a:last-of-type {
+    width: 16.67%; 
+    padding: 1rem;
+  }
+}
+
+/*  After 1194px, nav takes 100% width, but as the screen shrinks, the nav elements go to the next line */
 
 @media only screen and (max-width: 700px) {
 	.main-nav a {
@@ -105,7 +150,6 @@ h2{
       padding: 1rem;
     }
 }
-*/
 
 /* Clear the nav float */
 

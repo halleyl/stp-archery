@@ -20,7 +20,7 @@
 
 /*Banner transition: Animation name, speed, animation type, delay, total time*/
 .firstchild{
-  -webkit-animation: banneranimation 30s linear 1s infinite;
+  -webkit-animation: banneranimation 10s linear 1s infinite;
 }
 
 /*Define the speed and where it stops*/
@@ -31,6 +31,22 @@
   }
  /*Now: margin left moving*/ 
   100%{
-    margin-left: -1000px;
+    margin-left: -300px;
+  }
+}
+
+/*  After 1194px, nav takes 100% width. As the screen shrinks, the nav elements go to the next line */
+
+@media only screen and (max-width: 1194px) {
+  .banner{
+    width: 100%;
+  }
+  
+  .banner:first-of-type {
+    width: auto; 
+  }
+
+  .banner:last-of-type {
+    width: auto; 
   }
 }
