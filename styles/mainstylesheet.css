@@ -14,7 +14,7 @@ Main article background: #f5f9eb
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
-  background-color: #f5f9eb; /* This style is overwritten by the header and footer color. This is necessary for my page, because my article tag is not being read. You guys can just put the background color as your article background, and it should work */
+  background-color: #f5f9eb;
 }
 
 .clearfix:after{
@@ -64,12 +64,6 @@ h1 {
     margin: 0 auto;
     padding: 2%;
   }
-}
-
-/* h2 styles */
-
-h2{
-  background-color: #f5f9eb;
 }
 
 /* Setting up OL items as a nav bar across the width of the screen */
@@ -179,7 +173,7 @@ article a:hover {
 
 section[class^='span_']  {
       float: left;
-      background-color: #ffffff;
+      background-color: #f5f9eb;
       margin: 1%;
     }
 
