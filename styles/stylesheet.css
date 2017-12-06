@@ -1,52 +1,111 @@
-/* Banner Styles */
+/* CSS Document */
+* {
+    box-sizing: border-box;}
 
-/*Create a reserved space for the banner*/
-.banner{
-  height: auto;
-  width: 98vmax;
-  margin-left: 1em;
-  margin-bottom: 1em;
-  padding: 0.25em;
-  overflow: hidden;
-}
-
-/*Float and add padding to all images in banner*/
-.firstchild, .secondchild, .thirdchild, .fourthchild {
-  float: left;
-  height: 200px;
-  width: auto;
-  padding: 0.2rem;
-}
-
-/*Banner transition: Animation name, speed, animation type, delay, total time*/
-.firstchild{
-  -webkit-animation: banneranimation 10s linear 1s infinite;
-}
-
-/*Define the speed and where it stops*/
-@-webkit-keyframes "banneranimation" {
-  /*Initially: margin left unmoving*/
-  0%{
-    margin-left: 0px;
-  }
- /*Now: margin left moving*/ 
-  100%{
-    margin-left: -300px;
-  }
-}
-
-/*  After 1194px, nav takes 100% width. As the screen shrinks, the nav elements go to the next line */
-
-@media only screen and (max-width: 1194px) {
-  .banner{
-    width: 100%;
-  }
+body {
+    font:12px arial;
+    color: #222;
+    text-align:center;
+    padding:35px;}
   
-  .banner:first-of-type {
-    width: auto; 
-  }
 
-  .banner:last-of-type {
-    width: auto; 
-  }
-}
+form, p, span {
+    margin:0;
+    padding:0;}
+  
+input { font:12px arial;}
+  
+a {
+    color:#0000FF;
+    text-decoration:none;}
+  
+a:hover { text-decoration:underline;}
+  
+
+/* Style inputs */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;}
+
+input[type=submit]:hover {
+    background-color: red;}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 10px;
+    background-color: darkgray;
+    padding: 10px;}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;}
+map{
+  width:400px;
+  height:400px;}
+ 
+#wrapper, #loginform {
+    margin: 100%;
+    padding-bottom:25px;
+    background: darkgray;
+    width:100px;
+    border:5px solid black; }
+  
+#loginform { padding-top:10px; }
+  
+#loginform p { margin: 5px; }
+  
+/* chatbox */
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:430px;
+    border:1px solid #ACD8F0;
+    overflow:auto; }
+  
+#usermsg {
+    width:395px;
+    border:1px solid #ACD8F0; }
+  
+#submit { width: 60px; }
+  
+.error { color: #ff0000; }
+  
+#menu { padding:12.5px 25px 12.5px 25px; }
+  
+.welcome { float:left; }
+  
+.logout { float:right; }
+  
+.msgln {margin:0 0 2px 0;}
