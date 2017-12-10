@@ -37,6 +37,10 @@ div.classes {
   margin:5px;
 }
 
+p strong {
+	font-size: 20px;
+}
+
 /*CSS for Schedule.HTML*/
 weekday.text {
 	float: left;
