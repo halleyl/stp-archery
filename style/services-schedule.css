@@ -7,9 +7,10 @@
 }
 
 .maggie-h2 {
-  color:#523e33;
-  padding: 20px;
+  padding: 20px 20px;
   text-align: center;
+  clear:both;
+	
 }
 .maggie-p {
   text-align: justify;
@@ -37,10 +38,6 @@ div.classes {
   margin:5px;
 }
 
-p strong {
-	font-size: 20px;
-}
-
 /*CSS for Schedule.HTML*/
 weekday.text {
 	float: left;
@@ -53,11 +50,7 @@ div.weekday-text {
 	float: left;
 	width: 25%;
 }
-.schedule-container {
-	display:grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	padding: 30px 40px;
-}
+
 .schedule-p {
 	text-align: center;
 	line-height: 30px;
