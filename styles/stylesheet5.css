@@ -427,8 +427,8 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 10px;
-    background-color: darkgray;
-    padding: 10px;}
+    background-color: #f5f9eb;
+    }
 
 /* Create two columns that float next to eachother */
 
@@ -477,8 +477,9 @@ map{
     height:270px;
     width:430px;
     border:1px solid #ACD8F0;
-    overflow:auto; }
-  
+    overflow:auto; 
+  }
+
 #usermsg {
     width:395px;
     border:1px solid #ACD8F0; }
