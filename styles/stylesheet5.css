@@ -1,14 +1,13 @@
- /* main style sheet */
+/* MAIN STYLE SHEET */
+
 /* Colors from STP Logo:
 Lightest green: #d6e8b8
 Medium green: #94c840
-Brown: #523e33
-*/
+Brown: #523e33 */
 
 /* Colors for all the pages:
 Header & Footer background: #eaf3d8
-Main article background: #f5f9eb
-*/
+Main article background: #f5f9eb */
 
 /* Basic styling of the body */
 
@@ -27,10 +26,12 @@ body {
 .clear{
   clear: both;
 }
+
 /* Header styling - Logo and h1 floated left, nav floated right, all on the same line */
 
 header{
   background-color: #eaf3d8;
+  overflow: auto;
 }
 
 .logo {
@@ -69,7 +70,6 @@ h1 {
 }
 
 /* Setting up OL items as a nav bar across the width of the screen */
-
 /* Remove bullets, set nav width to 100% of header */
 
 .main-nav {
@@ -204,7 +204,7 @@ section[class^='span_']:first-child {
   	width: 13.83%;
 }
 
-/*  GO FULL WIDTH AT LESS THAN 700 PIXELS */
+/*  Go full width at less than 700px */
 
 @media only screen and (max-width: 700px) {
   
@@ -261,7 +261,7 @@ article p {
   background-color: #f5f9eb;
 }
 
-/* Don't including spacing after last paragraph in a section */
+/* Don't include spacing after last paragraph in a section */
 
 section[class^='span_'] p:last-of-type {
   margin-bottom: 0;
@@ -334,7 +334,8 @@ footer h4 {
   font-size: .9em;
 }
 
-/* index styles */
+/* INDEX.HTML STYLES */
+
 /* Banner Styles */
 /* Create a reserved space for the banner */
 
@@ -365,12 +366,10 @@ footer h4 {
 
 @-webkit-keyframes banneranimation {
   /* Initially: margin left unmoving */
-  
   0%{
     margin-left: 0px;
   }
  /* Now: margin left moving */ 
-  
   100%{
     margin-left: -300px;
   }
@@ -386,18 +385,10 @@ footer h4 {
   }
 }
 
-
 /* CONTACT PAGE STYLES */
-/* CSS Document */
+
 * {
     box-sizing: border-box;}
-
-body {
-    font:12px arial;
-    color: #222;
-    text-align:center;
-    padding:35px;}
-  
 
 form, p, span {
     margin:0;
@@ -433,12 +424,14 @@ input[type=submit]:hover {
     background-color: red;}
 
 /* Style the container/contact section */
+
 .container {
     border-radius: 10px;
     background-color: darkgray;
     padding: 10px;}
 
 /* Create two columns that float next to eachother */
+
 .column {
     float: left;
     width: 50%;
@@ -446,6 +439,7 @@ input[type=submit]:hover {
     padding: 20px;}
 
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -456,7 +450,7 @@ input[type=submit]:hover {
 @media (max-width: 800px) {
     .column, input[type=submit] {
         width: 100%;
-        margin-top: 0;}
+      margin-top: 0;}}
 map{
   width:400px;
   height:400px;}
@@ -473,6 +467,7 @@ map{
 #loginform p { margin: 5px; }
   
 /* chatbox */
+  
 #chatbox {
     text-align:left;
     margin:0 auto;
@@ -497,7 +492,6 @@ map{
 .welcome { float:left; }
   
 .logout { float:right; }
-  
-.msgln { margin:0 0 2px 0; }
 
-  
+.msgln {margin:0 0 2px 0;}
+
