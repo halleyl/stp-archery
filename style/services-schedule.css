@@ -13,9 +13,10 @@
   clear:both;
 }
 .maggie-p {
+  line-height: 1.2;
+  margin-bottom: 1em;
   text-align: justify;
-  font-size: 18px;
-  line-height: 20px;
+  background-color: #f5f9eb;
 }
 .price {
     line-height: 28px;
@@ -29,7 +30,7 @@ div.classes {
   margin: auto;
   padding: 0 35px 25px;
   box-sizing: border-box;
-  line-height: 27px;
+  line-height: 1.2;
 }
 
 .headers {
