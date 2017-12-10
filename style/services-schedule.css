@@ -4,7 +4,7 @@
 .maggie-h3 {
   text-align: center;
   line-height: 40px;
-  font-size: 14px:
+  font-size: 14px;
 }
 
 .maggie-h2 {
@@ -78,3 +78,4 @@ div.weekday-text {
 @media only screen and (max-width: 900px) {
     div.classes {width: 100%;}
 	div.price {text-align:left;}
+}
