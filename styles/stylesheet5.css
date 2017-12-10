@@ -494,7 +494,7 @@ map{
 
 #exit {
     display: block;
-    margin: auto;
+    margin-right: 1rem;
 }
   
 .error { color: #ff0000; }
