@@ -362,7 +362,6 @@ footer h4 {
 }
 
 /* Define the speed and where it stops */
-
 @-webkit-keyframes banneranimation {
   /* Initially: margin left unmoving */
   
@@ -456,7 +455,7 @@ input[type=submit]:hover {
 @media (max-width: 800px) {
     .column, input[type=submit] {
         width: 100%;
-        margin-top: 0;}
+      margin-top: 0;}}
 map{
   width:400px;
   height:400px;}
