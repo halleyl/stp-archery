@@ -1,3 +1,6 @@
+
+/*CSS for Services.HTML*/
+
 .maggie-h3 {
   text-align: center;
   line-height: 40px;
@@ -5,9 +8,9 @@
 }
 
 .maggie-h2 {
-  color:#523e33;
-  padding: 20px;
+  padding: 20px 20px;
   text-align: center;
+  clear:both;
 }
 .maggie-p {
   text-align: justify;
@@ -47,17 +50,14 @@ weekday.text {
 }
 
 div.weekday-text {
-    padding: 15px;
+   padding: 15px;
 	box-sizing: border-box;
 	display:grid;
 	float: left;
 	width: 25%;
 }
-.schedule-container {
-	display:grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	padding: 30px 40px;
-}
+
+
 .schedule-p {
 	text-align: center;
 	line-height: 30px;
