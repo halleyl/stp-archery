@@ -456,10 +456,10 @@ map{
   height:400px;}
  
 #wrapper, #loginform {
-    margin: 100%;
+    margin: auto;
     padding-bottom:25px;
     background: darkgray;
-    width:100px;
+    width:80%;
     border:5px solid black; }
   
 #loginform { padding-top:10px; }
@@ -481,10 +481,22 @@ map{
   }
 
 #usermsg {
+    display: block;
+    margin: auto;
     width:395px;
     border:1px solid #ACD8F0; }
   
-#submit { width: 60px; }
+#submitmsg { 
+    width: 5rem;
+    display: block;
+    margin: auto;
+}
+
+#exit {
+    display: block;
+    margin: auto;
+
+}
   
 .error { color: #ff0000; }
   
