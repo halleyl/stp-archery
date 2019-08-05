@@ -1,0 +1,79 @@
+
+/*CSS for Services.HTML*/
+
+.maggie-h3 {
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px:
+}
+
+.maggie-h2 {
+  padding: 20px 20px;
+  text-align: center;
+  clear:both;
+}
+.maggie-p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 20px;
+}
+.price {
+    line-height: 28px;
+    font-size: 18px;
+}
+ .classes {
+    float: left;
+ }
+div.classes {
+  width: 33.3333%;
+  margin: auto;
+  padding: 0 35px 25px;
+  box-sizing: border-box;
+  line-height: 27px;
+}
+
+.headers {
+  clear:both;
+  padding:5px;
+  margin:5px;
+}
+
+/*
+p strong {
+	font-size: 20px;
+}
+*/
+
+/*CSS for Schedule.HTML*/
+weekday.text {
+	float: left;
+}
+
+div.weekday-text {
+   padding: 15px;
+	box-sizing: border-box;
+	display:grid;
+	float: left;
+	width: 25%;
+}
+
+
+.schedule-p {
+	text-align: center;
+	line-height: 30px;
+}
+
+/*Media Queries for Services.HTML*/ 
+
+@media only screen and (max-width: 880px) {
+    div.weekday-text {width: 50%;}
+}
+@media only screen and (max-width: 550px) {
+    div.weekday-text {width: 100%;}
+}
+
+/*Media Queries for Services.HTML*/ 
+
+@media only screen and (max-width: 900px) {
+    div.classes {width: 100%;}
+	div.price {text-align:left;}
